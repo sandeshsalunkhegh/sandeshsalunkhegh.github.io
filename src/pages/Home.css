@@ -1,0 +1,123 @@
+#home {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #3b82f6, #4f46e5); /* From Blue-500 to Indigo-600 */
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    padding-top: 4rem;
+  }
+  
+  /* Heading and Subheading */
+  #home h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+  }
+  
+  #home h1 span {
+    color: #facc15; /* Yellow-400 */
+  }
+  
+  #home h2 {
+    font-size: 2rem;
+    color: #d1d5db; /* Gray-200 */
+    margin-bottom: 1rem;
+  }
+  
+  #home p {
+    font-size: 1.125rem;
+    color: #e5e7eb; /* Gray-300 */
+    max-width: 42rem;
+    margin: 0 auto 2rem auto;
+    line-height: 1.6;
+  }
+  
+  /* Buttons */
+  .btn-primary,
+  .btn-secondary {
+    border: none;
+    font-weight: bold;
+    padding: 0.75rem 2rem;
+    border-radius: 9999px; /* Fully rounded */
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .btn-primary {
+    background-color: #facc15; /* Yellow-400 */
+    color: #000;
+  }
+  
+  .btn-primary:hover {
+    background-color: #fcd34d; /* Lighter Yellow */
+    transform: scale(1.05);
+  }
+  
+  .btn-secondary {
+    background-color: #ffffff;
+    color: #3b82f6; /* Blue-600 */
+  }
+  
+  .btn-secondary:hover {
+    background-color: #f3f4f6; /* Gray-100 */
+    transform: scale(1.05);
+  }
+
+  /* Button Container */
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 1rem; /* Adds spacing between the buttons */
+        margin-top: 2rem;
+    }
+  
+  /* Bounce Animation */
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+  
+  /* Dark Mode Enhancements */
+  .app-container.dark #home {
+    background: linear-gradient(to right, #1e293b, #111827); /* Darker Blue & Black */
+    color: #e0e0e0;
+  }
+  
+  .app-container.dark h1 {
+    color: #ffffff;
+  }
+  
+  .app-container.dark h2 {
+    color: #9ca3af; /* Gray-400 */
+  }
+  
+  .app-container.dark p {
+    color: #d1d5db; /* Gray-300 */
+  }
+  
+  .app-container.dark .btn-primary {
+    background-color: #fbbf24; /* Amber-400 */
+    color: #121212;
+  }
+  
+  .app-container.dark .btn-primary:hover {
+    background-color: #fcd34d; /* Amber-300 */
+  }
+  
+  .app-container.dark .btn-secondary {
+    background-color: #2d3748; /* Dark Gray */
+    color: #fbbf24;
+  }
+  
+  .app-container.dark .btn-secondary:hover {
+    background-color: #4a5568; /* Darker Gray */
+  }

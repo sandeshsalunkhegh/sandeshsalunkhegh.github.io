@@ -1,0 +1,183 @@
+/* Projects Section */
+#projects {
+    /* background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); */
+    background: linear-gradient(to right, #3b82f6, #4f46e5);
+    color: #fff;
+    padding: 60px 20px;
+}
+
+/* Section Header */
+#projects .text-center {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#projects h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #fbbf24;
+}
+
+/* Grid Layout for Projects */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 20px; /* Improved Spacing */
+    margin-top: 20px;
+}
+
+/* Project Card Styling with Bubble/Glassmorphism Effect */
+.project-card {
+    background: rgba(255, 255, 255, 0.2); /* Transparent Glass Effect */
+    backdrop-filter: blur(15px); /* Glass Blur Effect */
+    border: 2px solid rgba(255, 255, 255, 0.2); 
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Project Image */
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* Project Content */
+.project-content {
+    padding: 20px;
+}
+
+/* Project Title */
+.project-card h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+    color: #fbbf24;
+}
+
+/* Project Description */
+.project-card p {
+    color: #e5e7eb;
+    font-size: 1rem;
+    margin-bottom: 12px;
+}
+
+/* Tags Section */
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.project-tags span {
+    background: rgba(251, 191, 36, 0.8); /* Yellow Bubble */
+    color: #1f2937;
+    padding: 6px 12px;
+    border-radius: 50px; /* Bubble Effect */
+    font-size: 0.9rem;
+    font-weight: 700;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons (Code & Demo Links) */
+.project-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 16px;
+}
+
+.btn-primary,
+.btn-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #6a11cb;
+    color: #fff;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-primary:hover,
+.btn-secondary:hover {
+    background-color: #4c1d95;
+    transform: scale(1.05);
+}
+
+.btn-primary .h-4,
+.btn-secondary .h-4 {
+    margin-right: 6px;
+}
+
+/* GitHub Link at Bottom */
+#projects .view-more {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #1f2937;
+    color: #fbbf24;
+    padding: 12px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease;
+}
+
+#projects .view-more:hover {
+    background-color: #374151;
+    color: #fff;
+}
+
+/* Dark Theme Support */
+[data-theme='dark'] .project-card {
+    background: rgba(31, 41, 55, 0.8); /* Dark Glass Effect */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    color: #e5e7eb;
+}
+
+[data-theme='dark'] .project-card h3 {
+    color: #fbbf24;
+}
+
+[data-theme='dark'] .btn-primary,
+[data-theme='dark'] .btn-secondary {
+    background-color: #fbbf24;
+    color: #1f2937;
+}
+
+[data-theme='dark'] .btn-primary:hover,
+[data-theme='dark'] .btn-secondary:hover {
+    background-color: #f59e0b;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .project-card img {
+        height: 150px;
+    }
+}
