@@ -14,7 +14,7 @@ Highly motivated Software Development Engineer with 5+ years of experience scali
 
 ## Live Demo
 
-[Visit my Portfolio](https://github.com/sandeshsalunkhegh/sandeshsalunkhegh.github.io/)
+[Visit my Portfolio](https://sandeshsalunkhegh.github.io/)
 
 ## Contact
 
