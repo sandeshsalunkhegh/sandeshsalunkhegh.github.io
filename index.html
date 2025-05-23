@@ -5,22 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandesh Salunkhe - Software Development Engineer</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght=400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Sandesh Salunkhe</a>
+            <div class="nav-links" id="navLinks">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+                <a href="#education">Education</a>
+                <a href="mailto:sandy.decoder@gmail.com" class="contact-button">Contact Me</a>
+            </div>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+        </div>
+    </nav>
+
     <header class="hero">
         <div class="container">
             <div class="hero-content">
-                <img src="images/profile.png" alt="Sandesh Salunkhe" class="profile-pic">
+                <img src="images/profile.jpg" alt="Sandesh Salunkhe" class="profile-pic">
                 <h1>Sandesh Salunkhe</h1>
-                <p class="tagline">Highly motivated Software Development Engineer with 5+ years of experience scaling back-end systems, building RESTful APIs, and integrating AI/LLM solutions. [cite: 1]</p>
+                <p class="tagline">Highly motivated Software Development Engineer with 5+ years of experience scaling back-end systems, building RESTful APIs, and integrating AI/LLM solutions.</p>
                 <div class="contact-info">
                     <p><i class="fas fa-envelope"></i> <a href="mailto:sandy.decoder@gmail.com">sandy.decoder@gmail.com</a></p>
-                    <p><i class="fas fa-phone"></i> +91 8446290949</p>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+918446290949">+91 8446290949</a></p>
                     <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/sandydecoder" target="_blank">linkedin.com/in/sandydecoder</a></p>
-                    </div>
+                </div>
             </div>
         </div>
     </header>
@@ -28,8 +43,8 @@
     <section id="about" class="section-padded">
         <div class="container">
             <h2>About Me</h2>
-            <p>
-                As a highly motivated Software Development Engineer with over 5 years of experience, I specialize in scaling back-end systems, building robust RESTful APIs, and integrating cutting-edge AI/LLM solutions[cite: 1]. My expertise extends to designing and implementing distributed systems and optimizing performance in various cloud environments, including AWS and GCP[cite: 2]. I am passionate about leveraging technology to solve complex problems and drive efficiency.
+            <p class="section-description">
+                As a highly motivated Software Development Engineer with over 5 years of experience, I specialize in scaling back-end systems, building robust RESTful APIs, and integrating cutting-edge AI/LLM solutions. My expertise extends to designing and implementing distributed systems and optimizing performance in various cloud environments, including AWS and GCP. I am passionate about leveraging technology to solve complex problems and drive efficiency.
             </p>
         </div>
     </section>
@@ -103,11 +118,11 @@
                 <h3>Senior Member, Tech.</h3>
                 <h4>D. E. Shaw Co. <span class="job-date">August 2024 - Present | Hyderabad, India</span></h4>
                 <ul>
-                    <li>Led a team in debugging and resolving critical job scheduling algorithm bugs, significantly enhancing system stability[cite: 4].</li>
-                    <li>Engineered an LLM-powered assistant (RAG) to automate task diagnosis, reducing issue resolution time[cite: 5].</li>
-                    <li>Designed and developed a pipeline to ingest & chunk Confluence documents and Q&A data into a vector database for LLM integration[cite: 6].</li>
-                    <li>Integrated Slack with LangChain to deliver contextual LLM responses, improving team communication and workflow[cite: 7].</li>
-                    <li>Architected a modular, cloud-agnostic platform with optimized design for MLOps & scalability[cite: 8].</li>
+                    <li>Led a team in debugging and resolving critical job scheduling algorithm bugs, significantly enhancing system stability.</li>
+                    <li>Engineered an LLM-powered assistant (RAG) to automate task diagnosis, reducing issue resolution time.</li>
+                    <li>Designed and developed a pipeline to ingest & chunk Confluence documents and Q&A data into a vector database for LLM integration.</li>
+                    <li>Integrated Slack with LangChain to deliver contextual LLM responses, improving team communication and workflow.</li>
+                    <li>Architected a modular, cloud-agnostic platform with optimized design for MLOps & scalability.</li>
                 </ul>
             </div>
 
@@ -115,10 +130,10 @@
                 <h3>Senior Software Engineer</h3>
                 <h4>Harness.io <span class="job-date">July 2023 - August 2024 | Bangalore, India</span></h4>
                 <ul>
-                    <li>Developed and maintained CI/CD pipelines using Java, GoLang, MongoDB & PostgreSQL, automating software delivery[cite: 9].</li>
-                    <li>Led the development of a pipeline-chaining feature, enabling the execution of one pipeline as a stage within another, resulting in improved automation workflows[cite: 10].</li>
-                    <li>Managed cloud cost management infrastructure using Go, Python, Kubernetes, AWS, GCP, BigQuery, and MongoDB[cite: 11].</li>
-                    <li>Identified, categorized, and classified cloud expense savings, optimizing cloud resource utilization and reducing costs by 25%[cite: 12].</li>
+                    <li>Developed and maintained CI/CD pipelines using Java, GoLang, MongoDB & PostgreSQL, automating software delivery.</li>
+                    <li>Led the development of a pipeline-chaining feature, enabling the execution of one pipeline as a stage within another, resulting in improved automation workflows.</li>
+                    <li>Managed cloud cost management infrastructure using Go, Python, Kubernetes, AWS, GCP, BigQuery, and MongoDB.</li>
+                    <li>Identified, categorized, and classified cloud expense savings, optimizing cloud resource utilization and reducing costs by 25%.</li>
                 </ul>
             </div>
 
@@ -126,10 +141,10 @@
                 <h3>Software Development Engineer - II</h3>
                 <h4>Hacker Rank <span class="job-date">April 2022 - June 2023 | Bangalore, India</span></h4>
                 <ul>
-                    <li>Developed language servers and IDE infrastructure using Go, Python, and Java[cite: 13].</li>
-                    <li>Improved Application Performance Monitoring (APM) tools for the interviewing platform, reducing debugging time by 60%[cite: 14].</li>
-                    <li>Developed Docker scripts to containerize backend servers on GCP Virtual Machines[cite: 15].</li>
-                    <li>Improved BigQuery processing pipelines, reducing data ingestion time from 15 min to 5 min[cite: 16].</li>
+                    <li>Developed language servers and IDE infrastructure using Go, Python, and Java.</li>
+                    <li>Improved Application Performance Monitoring (APM) tools for the interviewing platform, reducing debugging time by 60%.</li>
+                    <li>Developed Docker scripts to containerize backend servers on GCP Virtual Machines.</li>
+                    <li>Improved BigQuery processing pipelines, reducing data ingestion time from 15 min to 5 min.</li>
                 </ul>
             </div>
 
@@ -137,10 +152,10 @@
                 <h3>Software Engineer</h3>
                 <h4>BrowserStack Software Pvt. Ltd. <span class="job-date">May 2021 - April 2022 | Mumbai, India</span></h4>
                 <ul>
-                    <li>Developed applications using Ruby on Rails and Java, leveraging MySQL in an AWS environment[cite: 17].</li>
-                    <li>Developed email alert systems, invoice generation processes, and error reporting mechanisms[cite: 18].</li>
-                    <li>Developed Java-based alert mechanisms to proactively identify and mitigate production issues[cite: 19].</li>
-                    <li>Developed email alert and logging systems that reduced incident resolution time by 65%[cite: 20].</li>
+                    <li>Developed applications using Ruby on Rails and Java, leveraging MySQL in an AWS environment.</li>
+                    <li>Developed email alert systems, invoice generation processes, and error reporting mechanisms.</li>
+                    <li>Developed Java-based alert mechanisms to proactively identify and mitigate production issues.</li>
+                    <li>Developed email alert and logging systems that reduced incident resolution time by 65%.</li>
                 </ul>
             </div>
 
@@ -148,9 +163,9 @@
                 <h3>Software Engineer, Software Engineer Intern</h3>
                 <h4>Avalara Technologies <span class="job-date">April 2020 - June 2020 & July 2020 - May 2021 | Pune, India</span></h4>
                 <ul>
-                    <li>Developed web automation tools using C#, .NET, Java, and Python with an MVC architecture and MySQL database[cite: 21].</li>
-                    <li>Implemented exception handling and caching mechanisms in core projects, reducing debugging time by 85%[cite: 22].</li>
-                    <li>Performed SQL query optimizations, leading to 40% faster transaction processing time[cite: 23].</li>
+                    <li>Developed web automation tools using C#, .NET, Java, and Python with an MVC architecture and MySQL database.</li>
+                    <li>Implemented exception handling and caching mechanisms in core projects, reducing debugging time by 85%.</li>
+                    <li>Performed SQL query optimizations, leading to 40% faster transaction processing time.</li>
                 </ul>
             </div>
         </div>
@@ -161,12 +176,12 @@
             <h2>Projects</h2>
             <div class="project-entry">
                 <h3>Github APIs Integration</h3>
-                <p>Go/Python implementation for automating repository tasks. (Provide GitHub link here if available)</p>
+                <p>Go/Python implementation for automating repository tasks.</p>
                 <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="btn-link">View Project (GitHub) <i class="fab fa-github"></i></a>
             </div>
             <div class="project-entry">
                 <h3>Candidate Assistant (Gemini-based React App)</h3>
-                <p>A Gemini-based React application designed to help job-seekers analyze and score their resume against a job description. (Provide live demo or GitHub link here)</p>
+                <p>A Gemini-based React application designed to help job-seekers analyze and score their resume against a job description.</p>
                 <a href="YOUR_LIVE_DEMO_LINK_HERE" target="_blank" class="btn-link">Live Demo (if available) <i class="fas fa-external-link-alt"></i></a>
                 <a href="YOUR_GITHUB_REPO_LINK_HERE" target="_blank" class="btn-link">View Code (GitHub) <i class="fab fa-github"></i></a>
             </div>
@@ -197,13 +212,51 @@
             <div class="footer-links">
                 <a href="https://linkedin.com/in/sandydecoder" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                 <a href="mailto:sandy.decoder@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                </div>
+            </div>
         </div>
     </footer>
+
+    <button id="scrollTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
 
     <script>
         // Dynamically set current year for footer
         document.getElementById('current-year').textContent = new Date().getFullYear();
+
+        // Navbar toggle for mobile
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close nav menu when a link is clicked (for smooth scrolling)
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                if (navLinks.classList.contains('active')) {
+                    navLinks.classList.remove('active');
+                }
+            });
+        });
+
+
+        // Scroll to Top Button functionality
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
+        }
+
+        scrollTopBtn.addEventListener('click', () => {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        });
     </script>
 </body>
 </html>
