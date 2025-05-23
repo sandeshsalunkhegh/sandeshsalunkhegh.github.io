@@ -21,76 +21,92 @@ a, button, .btn-link, .skill-category, .job-entry, .project-entry, .education-en
     transition: all 0.3s ease; /* Smooth transitions for hover effects */
 }
 
-/* Navbar */
+/* --- Navbar Specific Styles --- */
 .navbar {
-    background-color: #007bff;
+    background-color: #1a2a4b; /* Deep Navy Blue for sophistication */
     color: #fff;
     padding: 15px 0;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Stronger, softer shadow */
     position: sticky;
     top: 0;
     z-index: 1000; /* Ensure it stays on top */
     display: flex;
     justify-content: center;
     align-items: center;
+    border-bottom: 3px solid #00aaff; /* A subtle, vibrant bottom border accent */
 }
 
 .navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 25px; /* More horizontal padding for content */
 }
 
 .navbar .logo {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    font-size: 1.6em;
+    font-size: 1.8em; /* Slightly larger logo */
     color: #fff;
     text-decoration: none;
     flex-shrink: 0; /* Prevent logo from shrinking */
+    letter-spacing: 0.5px; /* Subtle letter spacing */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
 }
 
 .nav-links a {
-    color: #fff;
+    color: #e0e6f0; /* Softer white for links */
     text-decoration: none;
-    margin-left: 30px;
-    font-size: 1.1em;
-    padding: 5px 0;
+    margin-left: 35px; /* More spacing between links */
+    font-size: 1.05em; /* Slightly adjusted size */
+    padding: 8px 0; /* More vertical padding for clickable area */
     position: relative;
+    font-weight: 500;
+    letter-spacing: 0.2px;
 }
 
 .nav-links a:hover {
-    color: #e2e2e2;
+    color: #ffffff; /* Pure white on hover */
+    transform: translateY(-2px); /* Subtle lift effect */
 }
 
-.nav-links a::after { /* Underline effect on hover */
+.nav-links a::after { /* Animated underline effect on hover */
     content: '';
     position: absolute;
     width: 0;
     height: 2px;
-    background-color: #fff;
-    bottom: 0;
-    left: 0;
+    background-color: #00aaff; /* Vibrant accent color */
+    bottom: -5px; /* Position slightly below text */
+    left: 50%; /* Start from center */
+    transform: translateX(-50%); /* Center the underline */
     transition: width 0.3s ease-in-out;
 }
 
 .nav-links a:hover::after {
-    width: 100%;
+    width: 100%; /* Expand to full width on hover */
 }
 
 .nav-links .contact-button {
-    background-color: #ffc107; /* Yellow accent */
-    color: #333;
-    padding: 8px 18px;
-    border-radius: 25px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #00aaff; /* Vibrant blue for contact button */
+    color: #ffffff;
+    padding: 10px 22px; /* Adjusted padding */
+    border-radius: 50px; /* More pill-shaped */
+    font-weight: 600;
+    margin-left: 40px; /* More space from other links */
+    box-shadow: 0 4px 10px rgba(0,170,255,0.3); /* Shadow for button */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    border: 1px solid #00aaff; /* Match border to background */
 }
 
 .nav-links .contact-button:hover {
-    background-color: #e0a800;
-    color: #fff;
+    background-color: #0088cc; /* Slightly darker blue on hover */
+    transform: translateY(-3px); /* More pronounced lift */
+    box-shadow: 0 6px 15px rgba(0,170,255,0.4); /* Stronger shadow */
+    border-color: #0088cc; /* Match border to background */
 }
 
 .nav-links .contact-button::after { /* Disable underline for button */
@@ -102,13 +118,20 @@ a, button, .btn-link, .skill-category, .job-entry, .project-entry, .education-en
     background: none;
     border: none;
     color: #fff;
-    font-size: 2em;
+    font-size: 2.2em; /* Slightly larger hamburger */
     cursor: pointer;
+    padding: 5px;
+    transition: transform 0.3s ease;
+}
+
+.hamburger:hover {
+    transform: scale(1.1); /* Subtle zoom on hover */
+    color: #00aaff; /* Accent color on hover */
 }
 
 /* Header/Hero Section */
 .hero {
-    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); /* Gradient background */
+    background: linear-gradient(135deg, #1a2a4b 0%, #00aaff 100%); /* Updated gradient for consistency */
     color: #fff;
     padding: 60px 0;
     text-align: center;
@@ -126,15 +149,24 @@ a, button, .btn-link, .skill-category, .job-entry, .project-entry, .education-en
     z-index: 1; /* Ensure content is above any background elements */
 }
 
+/* --- Profile Picture Specific Styles --- */
 .profile-pic {
-    width: 180px; /* Slightly larger */
-    height: 180px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 6px solid rgba(255,255,255,0.8); /* Thicker, semi-transparent border */
-    margin-bottom: 25px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.3); /* Add shadow to pic */
+    width: 200px; /* Slightly larger width for a more substantial rectangle */
+    height: 200px; /* Slightly larger height */
+    border-radius: 20px; /* Curved edges (adjust value for more/less curve) */
+    object-fit: cover; /* Ensures image covers the area without distortion */
+    border: 8px solid rgba(255,255,255,0.9); /* Thicker, almost opaque white border */
+    margin-bottom: 30px; /* More space below the picture */
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3); /* Stronger, more diffused shadow */
+    transform: scale(1); /* Initial scale for transition */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover */
 }
+
+.profile-pic:hover {
+    transform: scale(1.05); /* Slightly zoom in on hover */
+    box-shadow: 0 12px 35px rgba(0,0,0,0.4); /* More pronounced shadow on hover */
+}
+/* --- End Profile Picture Specific Styles --- */
 
 .hero h1 {
     font-family: 'Montserrat', sans-serif;
@@ -164,12 +196,12 @@ a, button, .btn-link, .skill-category, .job-entry, .project-entry, .education-en
 }
 
 .contact-info a:hover {
-    color: #ffc107; /* Yellow on hover for contact info */
+    color: #00aaff; /* Consistent accent color on hover for contact info */
 }
 
 .contact-info i {
     margin-right: 10px;
-    color: #ffc107; /* Icon color */
+    color: #00aaff; /* Icon color */
 }
 
 /* Section General Styling */
@@ -188,7 +220,7 @@ h2 {
     text-align: center;
     margin-bottom: 50px; /* More space below heading */
     font-size: 2.5em; /* Larger heading */
-    color: #007bff;
+    color: #1a2a4b; /* Darker heading color for contrast */
     position: relative;
     font-weight: 700;
 }
@@ -198,7 +230,7 @@ h2::after {
     display: block;
     width: 80px; /* Wider underline */
     height: 4px; /* Thicker underline */
-    background-color: #ffc107; /* Accent color for underline */
+    background-color: #00aaff; /* Accent color for underline */
     margin: 15px auto 0;
     border-radius: 2px;
 }
@@ -227,7 +259,7 @@ h2::after {
     box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Stronger shadow */
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
-    border-top: 4px solid #007bff; /* Top border accent */
+    border-top: 4px solid #00aaff; /* Top border accent */
 }
 
 .skill-category:hover {
@@ -237,7 +269,7 @@ h2::after {
 
 .skill-category h3 {
     font-family: 'Montserrat', sans-serif;
-    color: #007bff;
+    color: #1a2a4b; /* Darker skill category titles for contrast */
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 1.5em; /* Larger skill category titles */
@@ -254,7 +286,7 @@ h2::after {
 }
 
 .skill-category li {
-    background-color: #eaf6ff;
+    background-color: #e6f7ff; /* Lighter blue for tags */
     color: #0056b3;
     padding: 10px 18px; /* Larger tags */
     margin: 8px 6px; /* Adjust margin for spacing */
@@ -268,7 +300,7 @@ h2::after {
 /* Experience Section */
 .job-entry {
     background-color: #fff;
-    border-left: 6px solid #007bff; /* Thicker accent border */
+    border-left: 6px solid #00aaff; /* Thicker accent border */
     padding: 30px; /* More padding */
     margin-bottom: 40px; /* More space between entries */
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
@@ -320,7 +352,7 @@ h2::after {
 
 .job-entry ul li::before { /* Custom bullet point */
     content: '\2022'; /* Unicode for a bullet point */
-    color: #007bff; /* Bullet color */
+    color: #00aaff; /* Bullet color */
     font-weight: bold;
     display: inline-block;
     width: 1em;
@@ -338,7 +370,7 @@ h2::after {
     margin-bottom: 40px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
     border-radius: 10px;
-    border-bottom: 6px solid #ffc107; /* Accent border */
+    border-bottom: 6px solid #1a2a4b; /* Accent border matching primary color */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -364,7 +396,7 @@ h2::after {
 .btn-link {
     display: inline-flex; /* Use flex for icon alignment */
     align-items: center;
-    background-color: #007bff;
+    background-color: #00aaff; /* Use accent color for buttons */
     color: #fff;
     padding: 12px 25px; /* Larger buttons */
     border-radius: 30px; /* More rounded */
@@ -377,7 +409,7 @@ h2::after {
 }
 
 .btn-link:hover {
-    background-color: #0056b3;
+    background-color: #0088cc; /* Darker accent on hover */
     transform: translateY(-2px); /* Slight lift on hover */
     box-shadow: 0 5px 12px rgba(0,0,0,0.3);
 }
@@ -419,7 +451,7 @@ h2::after {
 
 /* Footer */
 footer {
-    background-color: #222; /* Darker footer */
+    background-color: #1a2a4b; /* Darker footer matching navbar primary */
     color: #eee;
     text-align: center;
     padding: 30px 0;
@@ -435,7 +467,7 @@ footer {
 }
 
 .footer-links a:hover {
-    color: #ffc107;
+    color: #00aaff; /* Accent color on hover */
 }
 
 /* Scroll to Top Button */
@@ -447,7 +479,7 @@ footer {
     z-index: 99; /* High z-index to be on top */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: #007bff; /* Blue background */
+    background-color: #00aaff; /* Blue background */
     color: white; /* White text */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px 18px; /* Some padding */
@@ -458,7 +490,7 @@ footer {
 }
 
 #scrollTopBtn:hover {
-    background-color: #0056b3; /* Darker blue on hover */
+    background-color: #0088cc; /* Darker blue on hover */
     transform: translateY(-3px);
 }
 
@@ -466,11 +498,28 @@ footer {
 
 /* Tablets and small desktops */
 @media (max-width: 992px) {
+    .navbar .logo {
+        font-size: 1.6em;
+    }
+    .nav-links a {
+        margin-left: 25px;
+        font-size: 1em;
+    }
+    .nav-links .contact-button {
+        margin-left: 30px;
+        padding: 9px 20px;
+    }
+
     .hero h1 {
         font-size: 2.8em;
     }
     .hero .tagline {
         font-size: 1.2em;
+    }
+    .profile-pic {
+        width: 180px; /* Adjust size for tablets */
+        height: 180px;
+        border-radius: 18px; /* Slightly less curve for smaller screens */
     }
     h2 {
         font-size: 2em;
@@ -500,22 +549,38 @@ footer {
         flex-direction: column;
         width: 100%;
         position: absolute;
-        top: 60px; /* Below navbar */
+        top: 70px; /* Adjust based on navbar height */
         left: 0;
-        background-color: #007bff;
+        background-color: #1a2a4b; /* Same deep navy for consistency */
         padding: 10px 0;
         box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         z-index: 999;
+        transform-origin: top;
+        animation: slideDown 0.3s ease-out forwards; /* Smooth slide-down animation */
     }
 
     .navbar .nav-links.active {
         display: flex; /* Show when active */
     }
 
+    @keyframes slideDown {
+        from { transform: scaleY(0); opacity: 0; }
+        to { transform: scaleY(1); opacity: 1; }
+    }
+
     .navbar .nav-links a {
         margin: 10px 0;
         text-align: center;
-        padding: 10px 0;
+        padding: 12px 0; /* More vertical padding for easier tapping */
+        font-size: 1.1em;
+        width: 100%; /* Make links fill width */
+        transition: background-color 0.2s ease, color 0.2s ease;
+    }
+
+    .navbar .nav-links a:hover {
+        background-color: rgba(0, 170, 255, 0.1); /* Light highlight on hover */
+        color: #fff;
+        transform: none; /* Remove lift on mobile nav links */
     }
 
     .navbar .nav-links a::after {
@@ -523,78 +588,32 @@ footer {
     }
 
     .navbar .nav-links .contact-button {
-        margin: 10px auto;
-        width: 80%; /* Make button wider */
+        margin: 15px auto; /* Center button and give more space */
+        width: calc(90% - 40px); /* Adjust width to fit container with padding */
+        text-align: center;
+        padding: 12px 20px;
     }
 
     .hamburger {
         display: block; /* Show hamburger icon */
     }
 
-    .container {
-        width: 95%;
-        padding: 15px 0;
+    .navbar .container {
+        padding: 0 15px; /* Adjust container padding for smaller screens */
     }
-    .hero {
-        padding: 40px 0;
-    }
+
     .profile-pic {
-        width: 140px;
+        width: 140px; /* Adjust size for mobile */
         height: 140px;
-        border-width: 4px;
+        border-radius: 15px; /* Even less curve for mobile */
+        border-width: 5px; /* Thinner border on mobile */
+        margin-bottom: 20px;
     }
     .hero h1 {
         font-size: 2.4em;
     }
     .hero .tagline {
         font-size: 1.1em;
-    }
-    .contact-info p {
-        font-size: 1em;
-    }
-    h2 {
-        font-size: 2em;
-        margin-bottom: 40px;
-    }
-    .section-padded, .section-light {
-        padding: 50px 0;
-    }
-    .skills-grid {
-        grid-template-columns: 1fr; /* Stack categories on small screens */
-        gap: 25px;
-    }
-    .job-entry .job-date {
-        float: none;
-        display: block;
-        margin-top: 5px;
-        text-align: left;
-    }
-    .job-entry h3 {
-        font-size: 1.5em;
-    }
-    .job-entry h4 {
-        font-size: 1.1em;
-    }
-    .btn-link {
-        display: flex; /* Keep flex for icon alignment */
-        justify-content: center; /* Center text and icon */
-        margin-right: 0;
-        margin-bottom: 15px;
-        width: calc(100% - 20px); /* Fill width, minus padding */
-        padding: 12px;
-    }
-    .project-entry p {
-        font-size: 1em;
-    }
-    .footer-links a {
-        margin: 0 10px;
-        font-size: 1.6em;
-    }
-    #scrollTopBtn {
-        bottom: 20px;
-        right: 20px;
-        padding: 12px 14px;
-        font-size: 1.3em;
     }
 }
 
@@ -610,8 +629,10 @@ footer {
         font-size: 0.95em;
     }
     .profile-pic {
-        width: 100px;
-        height: 100px;
+        width: 120px; /* Adjust size for very small mobiles */
+        height: 120px;
+        border-radius: 12px;
+        border-width: 4px;
     }
     h2 {
         font-size: 1.8em;
@@ -633,5 +654,11 @@ footer {
     }
     .footer-links a {
         font-size: 1.4em;
+    }
+    #scrollTopBtn {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px 14px;
+        font-size: 1.3em;
     }
 }
