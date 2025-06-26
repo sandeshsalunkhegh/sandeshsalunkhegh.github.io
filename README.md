@@ -1,14 +1,14 @@
 # Sandesh Salunkhe - Personal Portfolio
 
-A modern, responsive web developer portfolio showcasing my skills, experience, and projects. Built with HTML5, CSS3, and JavaScript, featuring a professional design optimized for job applications and interviews.
+A modern, responsive web developer portfolio showcasing Sandesh's skills, experience, and projects. Built with HTML5, CSS3, and JavaScript, featuring a professional design optimized for job applications and interviews.
 
 ## 🚀 Live Demo
 
-**[Visit my Portfolio](https://sandeshsalunkhegh.github.io/)**
+**[Visit Sandesh's Portfolio](https://sandeshsalunkhegh.github.io/)**
 
 ## 📋 Table of Contents
 
-- [About Me](#about-me)
+- [About Sandesh](#about-sandesh)
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Project Setup](#project-setup)
@@ -17,9 +17,9 @@ A modern, responsive web developer portfolio showcasing my skills, experience, a
 - [Deployment](#deployment)
 - [Contact](#contact)
 
-## 👨‍💻 About Me
+## 👨‍💻 About Sandesh
 
-Highly motivated Software Development Engineer with 5+ years of experience scaling back-end systems, building RESTful APIs, and integrating AI/LLM solutions. Proven ability to design and implement distributed systems and optimize performance in cloud environments (AWS/GCP).
+Highly motivated Software Development Engineer with 5+ years of experience scaling back-end systems, building RESTful APIs, and integrating AI/LLM solutions. Sandesh has proven ability to design and implement distributed systems and optimize performance in cloud environments (AWS/GCP).
 
 ## ✨ Features
 
