@@ -150,10 +150,6 @@ This portfolio is currently deployed on GitHub Pages:
 - **Email:** sandy.decoder@gmail.com
 - **Phone:** +91 8446290949
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
 ---
 
 **Built with ❤️ using HTML, CSS, and JavaScript**
