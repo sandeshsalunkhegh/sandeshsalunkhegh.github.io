@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sandeshsalunkhegh.github.io/sitemap.xml 
